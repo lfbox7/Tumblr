@@ -16,6 +16,7 @@
 		B84F614B235B797900757FF8 /* PhtotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84F614A235B797900757FF8 /* PhtotosViewController.swift */; };
 		B84F615B235B835A00757FF8 /* PhotosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84F615A235B835A00757FF8 /* PhotosCell.swift */; };
 		B84F615D235BF0B700757FF8 /* PhotosDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84F615C235BF0B700757FF8 /* PhotosDetailViewController.swift */; };
+		B8D53B79235E0A7100D01B9F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B8D53B78235E0A7100D01B9F /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		B84F614A235B797900757FF8 /* PhtotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhtotosViewController.swift; path = /Users/lenny/Desktop/Code_Path/Tumblr/Tumblr/PhtotosViewController.swift; sourceTree = "<absolute>"; };
 		B84F615A235B835A00757FF8 /* PhotosCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCell.swift; sourceTree = "<group>"; };
 		B84F615C235BF0B700757FF8 /* PhotosDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosDetailViewController.swift; sourceTree = "<group>"; };
+		B8D53B78235E0A7100D01B9F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BD6DD87EE5CD8908D4A9A5CF /* Pods-Tumblr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tumblr.debug.xcconfig"; path = "Target Support Files/Pods-Tumblr/Pods-Tumblr.debug.xcconfig"; sourceTree = "<group>"; };
 		E69EAFB178B09BBA154047EE /* Pods_Tumblr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tumblr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -57,6 +59,7 @@
 		B845CB882352609C00837493 = {
 			isa = PBXGroup;
 			children = (
+				B8D53B78235E0A7100D01B9F /* README.md */,
 				B845CB932352609C00837493 /* Tumblr */,
 				B845CB922352609C00837493 /* Products */,
 				C4A8229804043F134561F703 /* Pods */,
@@ -159,6 +162,7 @@
 			files = (
 				B845CBA12352609C00837493 /* LaunchScreen.storyboard in Resources */,
 				B845CB9E2352609C00837493 /* Assets.xcassets in Resources */,
+				B8D53B79235E0A7100D01B9F /* README.md in Resources */,
 				B845CB9C2352609C00837493 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
