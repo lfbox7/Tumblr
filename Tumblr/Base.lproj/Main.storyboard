@@ -1,24 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0sn-ON-haY">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Tumblr-->
+        <scene sceneID="zMH-Pg-hPK">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="YBN-ch-J7B" customClass="PhotosViewController" customModule="Tumblr" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GLg-h8-knm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="274" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="T6A-Pw-TE4">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PhotosCell" rowHeight="270" translatesAutoresizingMaskIntoConstraints="NO" id="iUy-sx-dhi" customClass="PhotosCell" customModule="Tumblr" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="270"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iUy-sx-dhi" translatesAutoresizingMaskIntoConstraints="NO" id="5tE-g9-vpO">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="270"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0fm-hL-l43">
+                                                    <rect key="frame" x="0.0" y="15" width="415" height="255"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="photoImageView" destination="0fm-hL-l43" id="LaS-2e-akH"/>
+                                            <segue destination="Awi-tB-so5" kind="show" id="gOX-db-lEY"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="uTd-pj-lq4"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Tumblr" id="ScT-Oe-LZB"/>
+                    <connections>
+                        <outlet property="tableView" destination="T6A-Pw-TE4" id="e28-M0-jbu"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iod-7u-TEK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1876.8115942028987" y="220.98214285714286"/>
+        </scene>
+        <!--Photos Detail View Controller-->
+        <scene sceneID="Kyv-FU-ap2">
+            <objects>
+                <viewController id="Awi-tB-so5" customClass="PhotosDetailViewController" customModule="Tumblr" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aXF-QX-gzj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mbI-mG-SEy">
+                                <rect key="frame" x="0.0" y="88" width="414" height="309"/>
+                            </imageView>
+                            <scrollView multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" layoutMarginsFollowReadableWidth="YES" id="f8f-iB-ZaR">
+                                <rect key="frame" x="20" y="405" width="374" height="457"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ACY-fj-9r6">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="ACY-fj-9r6" firstAttribute="leading" secondItem="f8f-iB-ZaR" secondAttribute="leading" id="BIi-se-2OC"/>
+                                    <constraint firstItem="ACY-fj-9r6" firstAttribute="width" secondItem="f8f-iB-ZaR" secondAttribute="width" id="JVF-6d-jta"/>
+                                    <constraint firstItem="ACY-fj-9r6" firstAttribute="top" secondItem="f8f-iB-ZaR" secondAttribute="top" id="TRo-1x-i7i"/>
+                                    <constraint firstAttribute="bottom" secondItem="ACY-fj-9r6" secondAttribute="bottom" constant="407" placeholder="YES" id="ou5-Yx-4Am"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="LJN-bh-4vR"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="XeQ-OQ-4U9"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mbI-mG-SEy" firstAttribute="leading" secondItem="1dQ-h0-sTQ" secondAttribute="leading" id="B6L-2r-FKV"/>
+                            <constraint firstItem="f8f-iB-ZaR" firstAttribute="top" secondItem="mbI-mG-SEy" secondAttribute="bottom" constant="8" id="OEZ-YS-HoS"/>
+                            <constraint firstItem="f8f-iB-ZaR" firstAttribute="leading" secondItem="aXF-QX-gzj" secondAttribute="leadingMargin" id="hIy-MW-VMc"/>
+                            <constraint firstItem="mbI-mG-SEy" firstAttribute="top" secondItem="1dQ-h0-sTQ" secondAttribute="top" id="nb9-Cu-Jvz"/>
+                            <constraint firstItem="mbI-mG-SEy" firstAttribute="centerX" secondItem="f8f-iB-ZaR" secondAttribute="centerX" id="vBa-sA-hdc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1dQ-h0-sTQ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gnd-cw-Qxu"/>
+                    <connections>
+                        <outlet property="postCaption" destination="ACY-fj-9r6" id="bqa-9x-Qjm"/>
+                        <outlet property="postScrollView" destination="f8f-iB-ZaR" id="SNA-cw-Hal"/>
+                        <outlet property="postView" destination="mbI-mG-SEy" id="65i-lX-ySw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZQ0-yg-vfS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2621.739130434783" y="221.65178571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="asM-bZ-oaW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0sn-ON-haY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="A1w-d2-mFg">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="YBN-ch-J7B" kind="relationship" relationship="rootViewController" id="xI9-xe-UEY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xbp-Sj-cHW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1101.449275362319" y="220.98214285714286"/>
         </scene>
     </scenes>
 </document>
