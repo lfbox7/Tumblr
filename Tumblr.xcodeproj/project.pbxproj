@@ -13,7 +13,7 @@
 		B845CB9C2352609C00837493 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B845CB9A2352609C00837493 /* Main.storyboard */; };
 		B845CB9E2352609C00837493 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B845CB9D2352609C00837493 /* Assets.xcassets */; };
 		B845CBA12352609C00837493 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B845CB9F2352609C00837493 /* LaunchScreen.storyboard */; };
-		B84F614B235B797900757FF8 /* PhtotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84F614A235B797900757FF8 /* PhtotosViewController.swift */; };
+		B84F614B235B797900757FF8 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84F614A235B797900757FF8 /* PhotosViewController.swift */; };
 		B84F615B235B835A00757FF8 /* PhotosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84F615A235B835A00757FF8 /* PhotosCell.swift */; };
 		B84F615D235BF0B700757FF8 /* PhotosDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84F615C235BF0B700757FF8 /* PhotosDetailViewController.swift */; };
 		B8D53B79235E0A7100D01B9F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B8D53B78235E0A7100D01B9F /* README.md */; };
@@ -28,7 +28,7 @@
 		B845CB9D2352609C00837493 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B845CBA02352609C00837493 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B845CBA22352609C00837493 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B84F614A235B797900757FF8 /* PhtotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhtotosViewController.swift; path = /Users/lenny/Desktop/Code_Path/Tumblr/Tumblr/PhtotosViewController.swift; sourceTree = "<absolute>"; };
+		B84F614A235B797900757FF8 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhotosViewController.swift; path = /Users/lenny/Desktop/Code_Path/Tumblr/Tumblr/PhotosViewController.swift; sourceTree = "<absolute>"; };
 		B84F615A235B835A00757FF8 /* PhotosCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCell.swift; sourceTree = "<group>"; };
 		B84F615C235BF0B700757FF8 /* PhotosDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosDetailViewController.swift; sourceTree = "<group>"; };
 		B8D53B78235E0A7100D01B9F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -81,7 +81,7 @@
 				B84F615A235B835A00757FF8 /* PhotosCell.swift */,
 				B845CB942352609C00837493 /* AppDelegate.swift */,
 				B845CB962352609C00837493 /* SceneDelegate.swift */,
-				B84F614A235B797900757FF8 /* PhtotosViewController.swift */,
+				B84F614A235B797900757FF8 /* PhotosViewController.swift */,
 				B845CB9A2352609C00837493 /* Main.storyboard */,
 				B845CB9D2352609C00837493 /* Assets.xcassets */,
 				B845CB9F2352609C00837493 /* LaunchScreen.storyboard */,
@@ -219,7 +219,7 @@
 				B84F615B235B835A00757FF8 /* PhotosCell.swift in Sources */,
 				B845CB952352609C00837493 /* AppDelegate.swift in Sources */,
 				B84F615D235BF0B700757FF8 /* PhotosDetailViewController.swift in Sources */,
-				B84F614B235B797900757FF8 /* PhtotosViewController.swift in Sources */,
+				B84F614B235B797900757FF8 /* PhotosViewController.swift in Sources */,
 				B845CB972352609C00837493 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

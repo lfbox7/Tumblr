@@ -18,6 +18,7 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tableView.separatorInset = UIEdgeInsets.zero
         
         tableView.dataSource = self
         tableView.delegate = self
